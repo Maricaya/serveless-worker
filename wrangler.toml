@@ -1,0 +1,16 @@
+name = "sever-less-test"
+type = "javascript"
+zone_id = ""
+account_id = "edecd41f8f97f8100316339cd49e7984"
+route = "example/*"
+workers_dev = true
+compatibility_date = "2021-11-13"
+
+kv_namespaces = [
+ { binding = "KV_FROM_RUST", id = "a4cf9e9724284c0f99931bab50d4ec5e", preview_id = "3730cdc5036841ed9009c30b60bc9299" }
+]
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
